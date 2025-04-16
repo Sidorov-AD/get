@@ -23,7 +23,7 @@ try:
 
         try:
             val = int(val)
-            if 0 <= val <= 255:
+            if val in range(0,256):
                 val_bin = decimal2binary(val)
                 GPIO.output(dac, val_bin)
                 print(f"Voltage is about {GetVoltage(val_bin):.4} volt")
