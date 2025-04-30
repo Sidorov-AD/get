@@ -91,4 +91,4 @@ try:
 finally:
     GPIO.output(dac, 0)
     GPIO.output(leds, 0)
-    GPIO.cleanup()
+    GPIO.cleanup() 
